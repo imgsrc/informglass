@@ -42,7 +42,7 @@ gulp.task('sass', function () {
             includePaths: bourbon.includePaths
         }).on("error", notify.onError()))
         .pipe(rename({suffix: '.min', prefix: ''}))
-        .pipe(autoprefixer(['last 15 versions']))
+        .pipe(autoprefixer(['last 6 versions']))
         .pipe(cleanCSS())
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('app/css'))
@@ -65,8 +65,7 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'scripts'], function () {
 
     var buildFiles = gulp.src([
         'app/*.html',
-        'app/.htaccess',
-        'app/mail.php'
+        'app/.htaccess'
     ]).pipe(gulp.dest('dist'));
 
     var buildCss = gulp.src([

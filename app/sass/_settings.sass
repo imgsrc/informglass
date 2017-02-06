@@ -1,0 +1,71 @@
+@import ../../bourbon/bourbon
+@import vars
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder
+  color: transparent !important
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder
+  color: transparent !important
+
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder
+  color: transparent !important
+
+body
+  font-size: 14px
+  min-width: 320px
+  position: relative
+  line-height: 1.5
+  font-family: $default-font
+  overflow-x: hidden
+  color: #fff
+
+.responsive-img
+  display: block
+  max-width: 100%
+  height: auto
+
+.heading
+  text-align: center
+
+h1
+  font:
+    family: "PlayfairDisplayBold", sans-serif
+    size: em(60px)
+  color: $blue
+  margin-top: 0
+
+h2
+  font:
+    family: "PlayfairDisplayBold", sans-serif
+    size: em(50px)
+  margin: 0 auto 50px
+
+h3
+  font:
+    family: "PlayfairDisplayBold", sans-serif
+    size: em(24px)
+
+section
+  padding: 80px 70px
+
+.s-blue
+  background-color: $blue

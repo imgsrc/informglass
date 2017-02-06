@@ -2,55 +2,94 @@
 @import fonts
 @import libs
 @import vars
+@import settings
 
-*::-webkit-input-placeholder
-  color: #666
-  opacity: 1
-
-*:-moz-placeholder
-  color: #666
-  opacity: 1
-
-*::-moz-placeholder
-  color: #666
-  opacity: 1
-
-*:-ms-input-placeholder
-  color: #666
-  opacity: 1
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-  color: #666
-
-body input:required:valid,
-body textarea:required:valid
-  color: #666
-
-input:focus::-webkit-input-placeholder,
-textarea:focus::-webkit-input-placeholder
-  color: transparent !important
-
-input:focus::-moz-placeholder,
-textarea:focus::-moz-placeholder
-  color: transparent !important
-
-input:focus:-ms-input-placeholder,
-textarea:focus:-ms-input-placeholder
-  color: transparent !important
-
-body
-  font-size: 16px
-  min-width: 320px
+.main-head
   position: relative
-  line-height: 1.75
-  font-family: $default-font
-  overflow-x: hidden
+  height: 85vh
+  background: #fff url(../img/header_bg.jpg) no-repeat top right
+  .top-line
+    .top-logo
+      margin-left: 30px
+      margin-top: 25px
+      width: 100px
+    .top-name
+      margin-top: 50px
+      color: $blue
+      font-size: em(25px)
 
-.img-responsive
-  display: block
-  max-width: 100%
-  height: auto
 
-// ╨Т╤Б╨╡╨│╨┤╨░ ╨▓ ╨║╨╛╨╜╤Ж╨╡
+.top-contacts
+  color: $blue
+  position: relative
+  background-color: #fff
+  padding: 15px 50px 20px 30px
+  display: inline-block
+  border-bottom-left-radius: 10px
+  border-bottom-right-radius: 10px
+  h3
+    font:
+      family: "PlayfairDisplayBold", sans-serif
+      size: em(22px)
+    margin-top: 0
+    margin-bottom: 35px
+    &:before
+      content: ''
+      position: absolute
+      top: 45px
+      left: 30px
+      height: 3px
+      width: 65px
+      background-color: $blue
+
+  &-text
+    font-size: em(17px)
+    .fa
+      margin-right: 10px
+      font-size: 20px
+
+.header-content
+  margin-top: 150px
+  margin-left: 65px
+  h1
+    margin-bottom: 60px
+    &:before
+      content: ''
+      position: absolute
+      top: 85px
+      left: 18px
+      height: 3px
+      width: 190px
+      background-color: #818181
+  p
+    color: #000
+    margin: 65px 0 45px
+  .button
+    padding: 13px 20px
+    background-color: $blue
+    color: #fff
+    font-family: "RobotoBold", sans-serif
+    font-weight: 700
+    text-transform: uppercase
+    &:hover
+      text-decoration: none
+      background-color: #2ad4d4
+
+.s-use
+  background: linear-gradient(to bottom, rgba(42,212,212,1), rgba(39,118,196,0.7))
+  font-size: em(18px)
+
+footer
+  padding: 40px
+  .heading
+    margin-bottom: 30px
+  .fa
+    margin-right: 5px
+  a
+    color: #fff
+    text-decoration: underline
+    &:hover
+      color: #2ad4d4
+
+//always end   
 @import media
